@@ -22,5 +22,19 @@
  * For more details, see https://docs.gradle.org/7.6/userguide/java_library_plugin.html#sec:java_library_configurations_graph
  */
 dependencies {
-
+    // Of course include the latest/SNAPSHOT version of GT6.
+    api "com.gregoriust.gregtech:gregtech_1.7.10:6.15.10:dev"
+    // These default dependencies are required to use the basics of GT6's API.  Some
+    // other usages may require more dependencies to be enabled.
+    api "com.github.GTNewHorizons:CodeChickenLib:1.1.7:dev"
+    api "com.github.GTNewHorizons:CodeChickenCore:1.1.11:dev"
+    api "com.github.GTNewHorizons:NotEnoughItems:2.3.24-GTNH:dev"
+    compileOnly "com.github.GTNewHorizons:AppleCore:3.2.10:dev"
+    compileOnly "appeng:appliedenergistics2:rv3-beta-6:dev"
+    compileOnly "micdoodle8.mods:GalacticraftCore:1.7-3.0.12.504:Dev"
+    compileOnly "micdoodle8.mods:MicdoodleCore:1.7-3.0.12.504:Dev"
+    compileOnly "openblocks:OpenBlocks:1.7.10-1.6-1.7.10:deobf"
+    compileOnly "openmods:OpenModsLib:1.7.10-0.10:deobf"
+    compileOnly "vazkii.botania:Botania:r1.8-250:deobf"
+    compileOnly "ic2:IC2Classic:1.2.1.8:dev"
 }
